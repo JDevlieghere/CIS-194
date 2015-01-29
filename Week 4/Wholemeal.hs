@@ -5,4 +5,15 @@ fun1 (x:xs)
     | otherwise = fun1 xs
 
 fun1' :: [Integer] -> Integer
-fun1' = foldr (\x y -> if even x then (x - 2) * y else y) 1
+fun1' = product . map(\x -> x - 2) . filter even
+
+
+fun2 :: Integer -> Integer
+fun2 1 = 0
+fun2 n
+    | even n = n + fun2 (n `div` 2)
+    | otherwise = fun2 (3 * n + 1)
+
+fun2' :: Integer -> Integer
+fun2' n = undefined
+

@@ -100,3 +100,7 @@ instance Alternative Parser where
       Nothing -> runParser g s
       Just x  -> Just x)
 
+-- Parses either an integer value or an uppercase character, and fails
+-- otherwise
+intOrUppercase :: Parser ()
+intOrUppercase = (const () <$> satisfy isUpper) <|> (const () <$> posInt)

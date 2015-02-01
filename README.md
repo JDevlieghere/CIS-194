@@ -1,3 +1,3 @@
-# CIS194
+# CIS-194
 
-My solutions to the assignments for the  course [CIS194 (Spring 2013)](http://www.cis.upenn.edu/~cis194/spring13/).
+My solutions for the assignments of the course [CIS194](http://www.cis.upenn.edu/~cis194/spring13/). 
